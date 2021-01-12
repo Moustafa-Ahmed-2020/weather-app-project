@@ -56,9 +56,9 @@ const updateUI = async () => {
     try {
         const dataUI = await request.json();
         console.log(dataUI);
-        document.getElementById('date').innerHTML = `Date: ${dataUI[0].date}`;
-        document.getElementById('temp').innerHTML = `Current Temperature: ${dataUI[0].current} C`;
-        document.getElementById('content').innerHTML = `This is ${cityField.value}, today is ${dataUI[0].date}. Current Temperature is ${dataUI[0].current} C, with a minimum of ${dataUI[0].min} C and a mximum of ${dataUI[0].max} C, the sky should be a ${dataUI[0].sky}. You are feeling ${feel.value}. Have a good day!`;
+        document.getElementById('date').innerHTML = `Date: ${dataUI.date}`;
+        document.getElementById('temp').innerHTML = `Current Temperature: ${dataUI.current} C`;
+        document.getElementById('content').innerHTML = `This is ${cityField.value}, today is ${dataUI.date}. Current Temperature is ${dataUI.current} C, with a minimum of ${dataUI.min} C and a mximum of ${dataUI.max} C, the sky should be a ${dataUI.sky}. You are feeling ${feel.value}. Have a good day!`;
     } catch(error) {
         console.log('error',error);
     }
