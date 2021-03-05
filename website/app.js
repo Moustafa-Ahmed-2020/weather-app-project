@@ -7,7 +7,7 @@ const cityField = document.getElementById('zip');
 
 const baseURL = 'https://api.openweathermap.org/data/2.5/weather?q=';
 
-const api = '&appid=af62cf116e5b076dad6f914248c270e3&units=metric';
+const api = '&appid=//&units=metric';
 
 //Get Todays feelings
 
